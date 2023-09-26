@@ -10,3 +10,17 @@ step 2 :
 >Pushing every element into an empty string
 >then we will change the string into number using parseInt() function .
 */
+
+//1st approach
+let num = 123456;
+ let numStr = num.toString();
+ let result=numStr.split("").reverse().join("");
+ console.log(parseInt(result));
+ 
+//2nd approach
+ let reverseStr = "";
+ for(let i=numStr.length - 1; i>=0; i--) {
+ reverseStr += numStr[i];
+ }
+ console.log(parseInt(reverseStr));
+ 
